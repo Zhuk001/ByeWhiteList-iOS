@@ -6,6 +6,21 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A000100 /* ByeWhiteListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000002 /* ByeWhiteListApp.swift */; };
+		3A000101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000003 /* ContentView.swift */; };
+		3A000102 /* NebulaWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000006 /* NebulaWebView.swift */; };
+		3A000103 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000012 /* ServerListView.swift */; };
+		3A000104 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000013 /* SettingsView.swift */; };
+		3A000105 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000007 /* ConfigManager.swift */; };
+		3A000106 /* AutoModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000008 /* AutoModeManager.swift */; };
+		3A000107 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000009 /* VPNManager.swift */; };
+		3A000108 /* ProxyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000010 /* ProxyEntity.swift */; };
+		3A000109 /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A000011 /* URLParser.swift */; };
+		3A000110 /* nebula.html in Resources */ = {isa = PBXBuildFile; fileRef = 3A000014 /* nebula.html */; };
+		3A000111 /* three.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3A000015 /* three.min.js */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3A000001 /* ByeWhiteList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByeWhiteList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A000002 /* ByeWhiteListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeWhiteListApp.swift; sourceTree = "<group>"; };
@@ -89,8 +104,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A000014 /* nebula.html in Resources */,
-				3A000015 /* three.min.js in Resources */,
+				3A000110 /* nebula.html in Resources */,
+				3A000111 /* three.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,16 +116,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A000002 /* ByeWhiteListApp.swift in Sources */,
-				3A000003 /* ContentView.swift in Sources */,
-				3A000006 /* NebulaWebView.swift in Sources */,
-				3A000012 /* ServerListView.swift in Sources */,
-				3A000013 /* SettingsView.swift in Sources */,
-				3A000007 /* ConfigManager.swift in Sources */,
-				3A000008 /* AutoModeManager.swift in Sources */,
-				3A000009 /* VPNManager.swift in Sources */,
-				3A000010 /* ProxyEntity.swift in Sources */,
-				3A000011 /* URLParser.swift in Sources */,
+				3A000100 /* ByeWhiteListApp.swift in Sources */,
+				3A000101 /* ContentView.swift in Sources */,
+				3A000102 /* NebulaWebView.swift in Sources */,
+				3A000103 /* ServerListView.swift in Sources */,
+				3A000104 /* SettingsView.swift in Sources */,
+				3A000105 /* ConfigManager.swift in Sources */,
+				3A000106 /* AutoModeManager.swift in Sources */,
+				3A000107 /* VPNManager.swift in Sources */,
+				3A000108 /* ProxyEntity.swift in Sources */,
+				3A000109 /* URLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
