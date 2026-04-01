@@ -5,12 +5,7 @@ struct ContentView: View {
     @State private var status = "Готов"
     
     var body: some View {
-ZStack {
-    // WebGL фон
-    NebulaWebView()
-        .ignoresSafeArea()
-    
-    VStack(spacing: 20) {
+        ZStack {
             Color.black.ignoresSafeArea()
             
             VStack(spacing: 20) {
@@ -101,6 +96,7 @@ ZStack {
             }
         }
     }
+}
 
 #Preview {
     ContentView()
