@@ -59,7 +59,7 @@ class VPNManager: ObservableObject {
         // Сохраняем конфиг сервера для VPN Extension
         sharedDefaults?.set(server.config, forKey: "serverConfig")
         sharedDefaults?.set(server.name, forKey: "serverName")
-        sharedDefaults?.set(server.type.rawValue, forKey: "serverType")
+        sharedDefaults?.set(server.type, forKey: "serverType")
         sharedDefaults?.synchronize()
         
         manager.isEnabled = true
@@ -115,6 +115,12 @@ class VPNManager: ObservableObject {
         case .disconnecting:
             isConnected = false
             status = "Отключение..."
+        case .invalid:
+            isConnected = false
+            status = "Недействительно"
+        case .reasserting:
+            isConnected = false
+            status = "Переподключение..."
         @unknown default:
             isConnected = false
             status = "Неизвестно"
