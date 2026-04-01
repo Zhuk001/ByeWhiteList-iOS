@@ -1,0 +1,188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		3A000001 /* ByeWhiteList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByeWhiteList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A000002 /* ByeWhiteListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeWhiteListApp.swift; sourceTree = "<group>"; };
+		3A000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A000005 /* ByeWhiteList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ByeWhiteList.entitlements; sourceTree = "<group>"; };
+		3A000006 /* NebulaWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaWebView.swift; sourceTree = "<group>"; };
+		3A000007 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		3A000008 /* AutoModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoModeManager.swift; sourceTree = "<group>"; };
+		3A000009 /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		3A000010 /* ProxyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyEntity.swift; sourceTree = "<group>"; };
+		3A000011 /* URLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		3A000012 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		3A000013 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3A000014 /* nebula.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = nebula.html; sourceTree = "<group>"; };
+		3A000015 /* three.min.js */ = {isa = PBXFileReference; lastKnownFileType = text; path = three.min.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3A000010 = {
+			isa = PBXGroup;
+			children = (
+				3A000020 /* ByeWhiteList */,
+				3A000030 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A000020 /* ByeWhiteList */ = {
+			isa = PBXGroup;
+			children = (
+				3A000004 /* Info.plist */,
+				3A000005 /* ByeWhiteList.entitlements */,
+				3A000002 /* ByeWhiteListApp.swift */,
+				3A000003 /* ContentView.swift */,
+				3A000006 /* NebulaWebView.swift */,
+				3A000012 /* ServerListView.swift */,
+				3A000013 /* SettingsView.swift */,
+				3A000007 /* ConfigManager.swift */,
+				3A000008 /* AutoModeManager.swift */,
+				3A000009 /* VPNManager.swift */,
+				3A000010 /* ProxyEntity.swift */,
+				3A000011 /* URLParser.swift */,
+				3A000014 /* nebula.html */,
+				3A000015 /* three.min.js */,
+			);
+			path = ByeWhiteList;
+			sourceTree = "<group>";
+		};
+		3A000030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A000001 /* ByeWhiteList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		3A000040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 3A000050 /* Build configuration list for PBXProject "ByeWhiteList" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en);
+			mainGroup = 3A000010;
+			productRefGroup = 3A000030;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (3A000060 /* ByeWhiteList */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A000070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A000014 /* nebula.html in Resources */,
+				3A000015 /* three.min.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A000080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A000002 /* ByeWhiteListApp.swift in Sources */,
+				3A000003 /* ContentView.swift in Sources */,
+				3A000006 /* NebulaWebView.swift in Sources */,
+				3A000012 /* ServerListView.swift in Sources */,
+				3A000013 /* SettingsView.swift in Sources */,
+				3A000007 /* ConfigManager.swift in Sources */,
+				3A000008 /* AutoModeManager.swift in Sources */,
+				3A000009 /* VPNManager.swift in Sources */,
+				3A000010 /* ProxyEntity.swift in Sources */,
+				3A000011 /* URLParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A000090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ByeWhiteList/ByeWhiteList.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ByeWhiteList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vg.byewhitelist.app;
+				PRODUCT_NAME = "ByeWhiteList";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A000091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ByeWhiteList/ByeWhiteList.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ByeWhiteList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vg.byewhitelist.app;
+				PRODUCT_NAME = "ByeWhiteList";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A000050 /* Build configuration list for PBXProject "ByeWhiteList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (3A000090 /* Debug */, 3A000091 /* Release */);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin PBXNativeTarget section */
+		3A000060 /* ByeWhiteList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A000100 /* Build configuration list for PBXNativeTarget "ByeWhiteList" */;
+			buildPhases = (3A000080 /* Sources */, 3A000070 /* Resources */);
+			name = ByeWhiteList;
+			productName = ByeWhiteList;
+			productReference = 3A000001 /* ByeWhiteList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin XCConfigurationList section */
+		3A000100 /* Build configuration list for PBXNativeTarget "ByeWhiteList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (3A000090 /* Debug */, 3A000091 /* Release */);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 3A000040 /* Project object */;
+}
