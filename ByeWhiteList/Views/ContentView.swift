@@ -101,7 +101,6 @@ ZStack {
             }
         }
     }
-}
 
 #Preview {
     ContentView()
