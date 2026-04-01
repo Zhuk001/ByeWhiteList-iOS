@@ -1,0 +1,25 @@
+name: ByeWhiteList
+options:
+  bundleIdPrefix: vg.byewhitelist
+  deploymentTarget:
+    iOS: 14.0
+
+targets:
+  ByeWhiteList:
+    type: application
+    platform: iOS
+    sources:
+      - path: ByeWhiteList
+        excludes:
+          - "**/Info.plist"
+          - "**/ByeWhiteList.entitlements"
+          - "**/Resources"
+    resources:
+      - path: ByeWhiteList/Resources
+    settings:
+      INFOPLIST_FILE: ByeWhiteList/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: vg.byewhitelist.app
+      CODE_SIGN_STYLE: Automatic
+      DEVELOPMENT_TEAM: ""
+    entitlements:
+      path: ByeWhiteList/ByeWhiteList.entitlements
