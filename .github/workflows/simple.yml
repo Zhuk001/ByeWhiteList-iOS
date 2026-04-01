@@ -1,0 +1,213 @@
+name: Simple Build Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Create simple Swift app
+        run: |
+          mkdir SimpleApp
+          cd SimpleApp
+          
+          cat > SimpleApp.swift << 'EOF'
+          import SwiftUI
+          
+          @main
+          struct SimpleApp: App {
+              var body: some Scene {
+                  WindowGroup {
+                      Text("Hello, World!")
+                  }
+              }
+          }
+          EOF
+          
+          cat > Info.plist << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>CFBundleDevelopmentRegion</key>
+              <string>en</string>
+              <key>CFBundleExecutable</key>
+              <string>SimpleApp</string>
+              <key>CFBundleIdentifier</key>
+              <string>test.simple.app</string>
+              <key>CFBundleInfoDictionaryVersion</key>
+              <string>6.0</string>
+              <key>CFBundleName</key>
+              <string>SimpleApp</string>
+              <key>CFBundlePackageType</key>
+              <string>APPL</string>
+              <key>CFBundleShortVersionString</key>
+              <string>1.0</string>
+              <key>CFBundleVersion</key>
+              <string>1</string>
+              <key>UILaunchScreen</key>
+              <dict/>
+          </dict>
+          </plist>
+          EOF
+          
+          mkdir SimpleApp.xcodeproj
+          cd SimpleApp.xcodeproj
+          
+          cat > project.pbxproj << 'EOF'
+          // !$*UTF8*$!
+          {
+              archiveVersion = 1;
+              classes = {};
+              objectVersion = 56;
+              objects = {
+                  /* Begin PBXFileReference section */
+                  T000001 /* SimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+                  T000002 /* SimpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleApp.swift; sourceTree = "<group>"; };
+                  T000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+                  /* End PBXFileReference section */
+                  
+                  /* Begin PBXGroup section */
+                  T000010 = {
+                      isa = PBXGroup;
+                      children = (
+                          T000020 /* SimpleApp */,
+                          T000030 /* Products */,
+                      );
+                      sourceTree = "<group>";
+                  };
+                  T000020 /* SimpleApp */ = {
+                      isa = PBXGroup;
+                      children = (
+                          T000002 /* SimpleApp.swift */,
+                          T000003 /* Info.plist */,
+                      );
+                      path = SimpleApp;
+                      sourceTree = "<group>";
+                  };
+                  T000030 /* Products */ = {
+                      isa = PBXGroup;
+                      children = (
+                          T000001 /* SimpleApp.app */,
+                      );
+                      name = Products;
+                      sourceTree = "<group>";
+                  };
+                  /* End PBXGroup section */
+                  
+                  /* Begin PBXProject section */
+                  T000040 /* Project object */ = {
+                      isa = PBXProject;
+                      attributes = {
+                          LastSwiftUpdateCheck = 1500;
+                          LastUpgradeCheck = 1500;
+                      };
+                      buildConfigurationList = T000050 /* Build config list */;
+                      compatibilityVersion = "Xcode 14.0";
+                      developmentRegion = en;
+                      hasScannedForEncodings = 0;
+                      knownRegions = (en);
+                      mainGroup = T000010;
+                      productRefGroup = T000030;
+                      projectDirPath = "";
+                      projectRoot = "";
+                      targets = (T000060 /* SimpleApp */);
+                  };
+                  /* End PBXProject section */
+                  
+                  /* Begin PBXSourcesBuildPhase section */
+                  T000070 /* Sources */ = {
+                      isa = PBXSourcesBuildPhase;
+                      buildActionMask = 2147483647;
+                      files = ();
+                      runOnlyForDeploymentPostprocessing = 0;
+                  };
+                  /* End PBXSourcesBuildPhase section */
+                  
+                  /* Begin XCBuildConfiguration section */
+                  T000080 /* Debug */ = {
+                      isa = XCBuildConfiguration;
+                      buildSettings = {
+                          CODE_SIGN_STYLE = Automatic;
+                          DEVELOPMENT_TEAM = "";
+                          GENERATE_INFOPLIST_FILE = NO;
+                          INFOPLIST_FILE = SimpleApp/Info.plist;
+                          PRODUCT_BUNDLE_IDENTIFIER = test.simple.app;
+                          PRODUCT_NAME = SimpleApp;
+                          SWIFT_VERSION = 5.0;
+                      };
+                      name = Debug;
+                  };
+                  T000081 /* Release */ = {
+                      isa = XCBuildConfiguration;
+                      buildSettings = {
+                          CODE_SIGN_STYLE = Automatic;
+                          DEVELOPMENT_TEAM = "";
+                          GENERATE_INFOPLIST_FILE = NO;
+                          INFOPLIST_FILE = SimpleApp/Info.plist;
+                          PRODUCT_BUNDLE_IDENTIFIER = test.simple.app;
+                          PRODUCT_NAME = SimpleApp;
+                          SWIFT_VERSION = 5.0;
+                      };
+                      name = Release;
+                  };
+                  /* End XCBuildConfiguration section */
+                  
+                  /* Begin XCConfigurationList section */
+                  T000050 /* Build config list */ = {
+                      isa = XCConfigurationList;
+                      buildConfigurations = (T000080 /* Debug */, T000081 /* Release */);
+                      defaultConfigurationName = Release;
+                  };
+                  /* End XCConfigurationList section */
+                  
+                  /* Begin PBXNativeTarget section */
+                  T000060 /* SimpleApp */ = {
+                      isa = PBXNativeTarget;
+                      buildConfigurationList = T000090 /* Target config list */;
+                      buildPhases = (T000070 /* Sources */);
+                      name = SimpleApp;
+                      productName = SimpleApp;
+                      productReference = T000001 /* SimpleApp.app */;
+                      productType = "com.apple.product-type.application";
+                  };
+                  /* End PBXNativeTarget section */
+                  
+                  /* Begin XCConfigurationList section */
+                  T000090 /* Target config list */ = {
+                      isa = XCConfigurationList;
+                      buildConfigurations = (T000080 /* Debug */, T000081 /* Release */);
+                      defaultConfigurationName = Release;
+                  };
+                  /* End XCConfigurationList section */
+              };
+              rootObject = T000040 /* Project object */;
+          }
+          EOF
+          cd ../..
+      
+           - name: Build simple app
+        run: |
+          cd SimpleApp
+          xcodebuild -project SimpleApp.xcodeproj -scheme SimpleApp -sdk iphoneos -configuration Release \
+            CODE_SIGN_STYLE=Automatic \
+            DEVELOPMENT_TEAM="" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+      
+      - name: Create IPA
+        run: |
+          cd SimpleApp
+          mkdir -p Payload
+          cp -r build/Release-iphoneos/SimpleApp.app Payload/
+          zip -r SimpleApp.ipa Payload
+          ls -la SimpleApp.ipa
+      
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: SimpleApp
+          path: SimpleApp/SimpleApp.ipa

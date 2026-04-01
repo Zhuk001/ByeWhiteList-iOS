@@ -1,0 +1,50 @@
+name: ByeWhiteList
+options:
+  bundleIdPrefix: vg.byewhitelist
+  deploymentTarget:
+    iOS: 14.0
+  usesSwiftPackageManager: false
+
+settings:
+  CODE_SIGN_STYLE: Automatic
+  CODE_SIGN_IDENTITY: ""
+  CODE_SIGNING_REQUIRED: NO
+  CODE_SIGNING_ALLOWED: NO
+  DEVELOPMENT_TEAM: ""
+
+targets:
+  ByeWhiteList:
+    type: application
+    platform: iOS
+    sources:
+      - path: ByeWhiteList
+        excludes:
+          - "**/Info.plist"
+          - "**/ByeWhiteList.entitlements"
+          - "**/nebula.html"
+          - "**/three.min.js"
+    resources:
+      - path: ByeWhiteList/Resources
+        buildPhase: resources
+    settings:
+      INFOPLIST_FILE: ByeWhiteList/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: vg.byewhitelist.app
+      SWIFT_VERSION: 5.0
+    entitlements:
+      path: ByeWhiteList/ByeWhiteList.entitlements
+    postCompileScripts:
+      - script: |
+          echo "Build completed"
+
+  VPNExtension:
+    type: app-extension
+    platform: iOS
+    extensionPoint: packet-tunnel-provider
+    sources:
+      - path: VPNExtension
+    settings:
+      INFOPLIST_FILE: VPNExtension/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: vg.byewhitelist.VPNExtension
+      SWIFT_VERSION: 5.0
+    entitlements:
+      path: VPNExtension/VPNExtension.entitlements
